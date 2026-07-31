@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For Nimu</title>
+    <title>❤️ Happy Girlfriend's Day, Nimu ❤️</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -748,27 +748,27 @@
         const PHOTOS = [
             {
                 src: "https://i.postimg.cc/KvkjRCF6/IMG-2939.jpg",
-                caption: ""
+                caption:"Our First Smile ❤️"
             },
             {
                 src: "https://i.postimg.cc/bvTN7hHy/IMG-2938.jpg",
-                caption: ""
+                caption:"The Cutest Girl ❤️"
             },
             {
                 src: "https://i.postimg.cc/3xjKGTqj/IMG-2937.jpg",
-                caption: ""
+                caption:"Forever Begins Here ✨"
             },
             {
                 src: "https://i.postimg.cc/LsN2yV2L/IMG-2936.jpg",
-                caption: ""
+                caption:"My Safe Place ❤️"
             },
             {
                 src: "https://i.postimg.cc/Y9Pk7q4j/IMG-2933.jpg",
-                caption: ""
+                caption:"You Are My Home 🌸"
             },
             {
                 src: "https://i.postimg.cc/23RDqc73/IMG-2931.jpg",
-                caption: ""
+                caption:"Happy Girlfriend's Day ❤️"
             }
         ];
 
@@ -1120,10 +1120,10 @@
             noBtn.style.display = 'none';
             aftermath.scrollIntoView({ behavior: 'smooth', block: 'center' });
             if (window.confetti) {
-                confetti({ particleCount: 130, spread: 85, origin: { y: 0.6 }, colors: ['#ffb6b9', '#ffcf87', '#ffe0a8'] });
+                confetti({ particleCount: 180, spread: 360, origin: { y: 0.6 }, colors: ['#ffb6b9', '#ffcf87', '#ffe0a8'] });
                 setTimeout(() => {
-                    confetti({ particleCount: 80, angle: 60, spread: 60, origin: { x: 0 }, colors: ['#ffb6b9', '#ffcf87'] });
-                    confetti({ particleCount: 80, angle: 120, spread: 60, origin: { x: 1 }, colors: ['#ffb6b9', '#ffcf87'] });
+                    confetti({ particleCount: 180, angle: 360, spread: 60, origin: { x: 0 }, colors: ['#ffb6b9', '#ffcf87'] });
+                    confetti({ particleCount: 180, angle: 360, spread: 60, origin: { x: 1 }, colors: ['#ffb6b9', '#ffcf87'] });
                 }, 300);
             }
         });
@@ -1137,7 +1137,9 @@
                 lastSpark = now;
                 const el = document.createElement('div');
                 el.className = 'sparkle';
-                el.textContent = Math.random() > 0.5 ? '✨' : '·';
+                el.textContent = const hearts = ['❤️','💖','💕','💗','💘','💝'];
+
+el.textContent = hearts[Math.floor(Math.random()*hearts.length)];
                 el.style.left = e.clientX + 'px';
                 el.style.top = e.clientY + 'px';
                 el.style.setProperty('--sx', (Math.random() * 30 - 15) + 'px');
@@ -1185,6 +1187,16 @@ btn.onclick = async () => {
     }
 };
 </script>
+
+<div id="endingMessage">
+    Made with infinite love ❤️
+    <br><br>
+    Only for
+    <br>
+    <span>Nimu</span>
+    <br><br>
+    — Ayush
+</div>    
 </body>
 
 </html>
