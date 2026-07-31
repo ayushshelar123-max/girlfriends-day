@@ -1146,7 +1146,40 @@
             });
         }
     </script>
+ <audio id="bgMusic" autoplay loop>
+    <source src="be-my-baby.mp3" type="audio/mpeg">
+</audio>
 
+<button id="musicBtn"
+style="
+position:fixed;
+top:20px;
+right:20px;
+padding:12px 20px;
+border:none;
+border-radius:30px;
+background:#ff4d88;
+color:white;
+font-size:16px;
+cursor:pointer;
+z-index:9999;">
+🎵 Play Our Song
+</button>
+
+<script>
+const music = document.getElementById("bgMusic");
+const btn = document.getElementById("musicBtn");
+
+btn.onclick = () => {
+    if (music.paused) {
+        music.play();
+        btn.innerHTML = "⏸ Pause Music";
+    } else {
+        music.pause();
+        btn.innerHTML = "🎵 Play Our Song";
+    }
+};
+</script>
 </body>
 
 </html>
