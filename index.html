@@ -1170,13 +1170,18 @@ z-index:9999;">
 const music = document.getElementById("bgMusic");
 const btn = document.getElementById("musicBtn");
 
-btn.onclick = () => {
-    if (music.paused) {
-        music.play().catch(err => console.log(err));
-        btn.innerHTML = "⏸ Pause Music";
-    } else {
-        music.pause();
-        btn.innerHTML = "🎵 Play Our Song";
+btn.onclick = async () => {
+    try {
+        if (music.paused) {
+            await music.play();
+            btn.innerHTML = "⏸ Pause Music";
+        } else {
+            music.pause();
+            btn.innerHTML = "🎵 Play Our Song";
+        }
+    } catch (err) {
+        alert("Music couldn't play: " + err.message);
+        console.error(err);
     }
 };
 </script>
