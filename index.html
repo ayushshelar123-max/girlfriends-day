@@ -1137,9 +1137,8 @@
                 lastSpark = now;
                 const el = document.createElement('div');
                 el.className = 'sparkle';
-                el.textContent = const hearts = ['❤️','💖','💕','💗','💘','💝'];
-
-el.textContent = hearts[Math.floor(Math.random()*hearts.length)];
+                const hearts = ['❤️','💖','💕','💗','💘','💝'];
+el.textContent = hearts[Math.floor(Math.random() * hearts.length)];
                 el.style.left = e.clientX + 'px';
                 el.style.top = e.clientY + 'px';
                 el.style.setProperty('--sx', (Math.random() * 30 - 15) + 'px');
